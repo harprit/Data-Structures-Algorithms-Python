@@ -1,12 +1,12 @@
 def bubblesort(a):
     n = len(a)
-    # i reprsent passes, total n-1 passes
-    for i in range(n - 1):
-        # in first pass when i = 0, j = 0 to n - 2 (both inclusive)
-        # in second pass when i = 1, j = 0 to n - 3
+    # p reprsent passes, total n-1 passes
+    for p in range(n - 1):
+        # in first pass when p = 0, j = 0 to n - 2 (both inclusive)
+        # in second pass when p = 1, j = 0 to n - 3
         # ...
-        # in last pass when i = n - 2, j = 0
-        for j in range(n - i - 1):
+        # in last pass when p = n - 2, j = 0
+        for j in range(n - p - 1):
             if a[j] > a[j + 1]:
                 a[j], a[j + 1] = a[j + 1], a[j]
 

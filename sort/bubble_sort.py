@@ -1,4 +1,4 @@
-def bubblesort(a):
+def bubble_sort(a):
     n = len(a)
     # p reprsent passes, total n-1 passes
     for p in range(n - 1):
@@ -13,7 +13,7 @@ def bubblesort(a):
 
 def main():
     a = [2, 8, 7, 1, 3, 5, 6, 4]
-    bubblesort(a)
+    bubble_sort(a)
     print(a)
 
 if __name__ == "__main__":

@@ -1,14 +1,14 @@
 def selection_sort(a):
     n = len(a)
     for p in range(n - 1):
-        min_value_index = find_min_value_index(a, p, n)
+        min_value_index = find_min_value_index(a, p)
         if min_value_index != p:
             a[p], a[min_value_index] = a[min_value_index], a[p]
 
 
-def find_min_value_index(a, beg, end):
+def find_min_value_index(a, beg):
     min_value_index = beg
-    for i in range(beg, end):
+    for i in range(beg + 1, len(a)):
         if a[i] < a[min_value_index]:
             min_value_index = i
     return min_value_index
